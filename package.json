@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "amocrm-js": "^3.4.2"
   }
 }
