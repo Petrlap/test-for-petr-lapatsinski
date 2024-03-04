@@ -3,10 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Test App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <select id="pageSizeSelect" class="pagination-select">
+      <option value="2">Показать 2 сделки</option>
+      <option value="5">Показать 5 сделок</option>
+      <option value="10">Показать 10 сделок</option>
+      <option value="9999" selected>Показать все сделки</option>
+    </select>
+    <div class="container">
+      <div id="leads-table-container"></div>
+      <div class="buttons-container">
+        <button class="pagination-button previous" id="prevPage">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <button class="pagination-button next" id="nextPage">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script type="module" src="./src/js/main.js"></script>
   </body>
